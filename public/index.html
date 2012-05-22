@@ -9,7 +9,7 @@
   <meta charset="utf-8" />
 
   <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width">
 
   <title>dotJS</title>
 
@@ -19,12 +19,7 @@
   <link rel="stylesheet" href="stylesheets/typography.css">
   <link rel="stylesheet" href="stylesheets/grid.css">
   <link rel="stylesheet" href="stylesheets/ui.css">
-  <link rel="stylesheet" href="stylesheets/forms.css">
-  <link rel="stylesheet" href="stylesheets/orbit.css">
-  <link rel="stylesheet" href="stylesheets/reveal.css">
   <link rel="stylesheet" href="stylesheets/mobile.css">
-  <!-- End Combine and Compress These CSS Files -->
-  <link rel="stylesheet" href="stylesheets/app.css">
 
   <!--[if lt IE 9]>
     <link rel="stylesheet" href="stylesheets/ie.css">
@@ -37,11 +32,6 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <style type="text/css">
-    .display-grid .row { background: #eee; margin-bottom: 8px; }
-    .display-grid .column, .display-grid .columns { background: #ddd; }
-  </style>
-
 </head>
 <body>
 
@@ -53,13 +43,13 @@
         <!-- <h2>dotJS</h2> -->
         <a href="http://www.dotjs.fr/"><img src="images/logo.png" style="height:100px;padding-top:60px"></a>
         <h4>The largest JavaScript conference in France</h4>
-        
+
       </div>
     </div>
 
     <div class="row">
       <div class="eight columns centered" style="text-align:center">
-        
+
         <h5>November 30, 2012<br/>Paris, France</h5>
 
         <hr/>
@@ -86,7 +76,7 @@
         <h3>Partners</h3>
 
         <h6>Partnership packages are available on request: <a href="mailto:contact@dotjs.fr">contact@dotjs.fr</a></h6>
-        
+
         <br/>
 
         <hr/>
@@ -123,7 +113,7 @@
 
         </div>
         <hr/>
-        
+
         <div id="wufoo-w7x3k1">
         Fill out my <a href="http://thomasb.wufoo.com/forms/w7x3k1">online form</a>.
         </div>
@@ -141,15 +131,6 @@
         try { w7x3k1 = new WufooForm();w7x3k1.initialize(options);w7x3k1.display(); } catch (e) {}};
         var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
         })(document, 'script');</script>
-
-        <!-- <h3>Be the first to know!</h3>
-        <span class="green radius label">May 30th</span> We will announce more information during the next ParisJS meetup on May 30th.
-        <form class="nice">
-          <label>Your email:</label>
-          <input type="email" class="input-text expand">
-          <p>No spam, we promise!</p>
-          <input type="submit" class="black button" value="Subscribe">
-        </form> -->
       </div>
 
       <hr/>
@@ -157,38 +138,5 @@
     </div>
   </div>
   <!-- container -->
-
-  <!-- Included JS Files -->
-  <script src="javascripts/jquery.min.js"></script>
-  <!-- Combine and Compress These JS Files -->
-  <script src="javascripts/jquery.reveal.js"></script>
-  <script src="javascripts/jquery.orbit-1.4.0.js"></script>
-  <script src="javascripts/jquery.customforms.js"></script>
-  <script src="javascripts/jquery.placeholder.min.js"></script>
-  <script src="javascripts/jquery.tooltips.js"></script>
-  <!-- End Combine and Compress These JS Files -->
-  <script src="javascripts/app.js"></script>
-  
-  <script>
-    $('#testModal').bind('reveal:open reveal:opened reveal:close reveal:closed', function (event) {
-      console.log(event);
-    });
-    
-    $('#fireReveal').click(function (event) {
-      event.preventDefault();
-      $('#testModal').reveal();
-    });
-    
-    $('#fireRevealFade').click(function (event) {
-      event.preventDefault();
-      $('#testModal').reveal({animation: 'fade'});
-    });
-    
-    $('#fireRevealNone').click(function (event) {
-      event.preventDefault();
-      $('#testModal').reveal({animation: 'none'});
-    });
-  </script>
-
 </body>
 </html>
