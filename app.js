@@ -4,22 +4,10 @@ var express = require('express'),
 // Configuration
 app.configure(function(){
 	app.use(express.static(__dirname + '/public'));
-	app.use(express.bodyParser());
-	app.use(express.methodOverride());
-
-	//Error Handling
-	app.use(express.logger());
-	app.use(express.errorHandler({
-		dumpExceptions: true,
-		showStack: true
-	}));
-
-	//Setup the Route, you are almost done
-	app.use(app.router);
 });
 
 //Heroku
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3333;
 app.listen(port, function() {
 	console.log("Listening on " + port);
 });
