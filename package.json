@@ -2,8 +2,7 @@
   "name": "heroku-node-wildcard",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.5.x",
-    "connect": "2.0.x"
+    "express": "3.0.0alpha4"
   },
   "engines": {
     "node": "0.6.x"
