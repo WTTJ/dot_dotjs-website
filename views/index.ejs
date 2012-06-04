@@ -87,16 +87,13 @@
           <div class="social-box">
 
             <% if ( typeof success != "undefined" && success == 1) { %>
-              <p class="social-box-registered">Thanks!</p>
-            <% } else if ( typeof success != "undefined" && success == 0) { %>
-              <p class="social-box-error"><%= error %></p>
-              <form class="social-box-form nice" method="POST" action="/" id="newsletter">
-                <input type="email" name="email" placeholder="Enter your email" class="small input-text">
-                <input type="submit" value="Subscribe to our updates" class="small white nice button radius" style="padding-right:5px;padding-left:5px;">
-              </form>
+              <p class="social-box-registered">Thanks for registering!</p>
             <% } else { %>
+              <% if ( typeof success != "undefined" && success == 0) { %>
+              <p class="social-box-error"><%= error %></p>
+              <% } %>
               <form class="social-box-form nice" method="POST" action="/" id="newsletter">
-                <input type="email" name="email" placeholder="Enter your email" class="small input-text">
+                <input type="email" required name="email" placeholder="Enter your email" class="small input-text">
                 <input type="submit" value="Subscribe to our updates" class="small white nice button radius" style="padding-right:5px;padding-left:5px;">
               </form>
             <% } %>
