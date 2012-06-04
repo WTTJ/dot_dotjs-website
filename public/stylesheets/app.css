@@ -1,25 +1,327 @@
-/* Artfully masterminded by ZURB  */
-
-/* -------------------------------------------------- 
-   Table of Contents
------------------------------------------------------
-:: Shared Styles
-:: Page Name 1
-:: Page Name 2
-*/
-
-
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
 
+body {
+  background: #312c24;
+  color: #fff;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'TitilliumText22LBold', Arial, sans-serif;
+  color: #fff;
+}
+
+a {
+  color: #ffee71;
+}
+
+.logo a {
+  margin-top: 28px;
+  display: block;
+  width: 170px;
+  height: 72px;
+  overflow: hidden;
+  background: url('../images/dotJS_png24.png') no-repeat center center;
+}
+
+.logo h1 {
+  text-indent: -9999px;
+}
+
+.nav-bar {
+  background: transparent;
+  border: 0;
+  margin-top: 40px;
+  float: right;
+}
+
+.nav-bar > li {
+  border: 0;
+  height: 55px;
+  line-height: 55px;
+}
+
+.nav-bar a {
+  display: block;
+  padding: 0 25px;
+  text-align: center;
+  font-family: 'TitilliumText22LBold', Arial, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-bar .buy a {
+  background: #fadd51;
+  border-radius: 10px;
+  color: #000;
+  padding: 0 10px;
+  height: 100%;
+}
+
+.container {
+  padding: 0;
+}
+
+.header {
+  background: #312c24;
+  min-height: 125px;
+}
+
+.page {
+  background: url('../images/bgnoise.png') #4c473f;
+  padding-bottom: 30px;
+}
+
+.page h2 {
+  margin-top: 50px;
+}
+
+div.alert-box {
+  background: #fadd51;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0;
+  text-shadow: none;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'TitilliumText22LRegular', Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  padding: 9px;
+}
+
+div.alert-box a {
+  color: #2A85E8;
+}
+
+div.alert-box strong {
+  font-weight: normal;
+  font-family: 'TitilliumText22LBold', Arial, sans-serif;
+}
+
+.big-title {
+  text-shadow: 0 3px 0px rgba(0, 0, 0, 0.4);
+  margin-top: 50px;
+}
+
+.big-title h1 {
+  color: #fff;
+  font-weight: 48px;
+  font-weight: normal;
+}
+
+.big-subtitle {
+  text-shadow: 0 3px 0px rgba(0, 0, 0, 0.4);
+  font-family: 'TitilliumText22LRegular', Arial, sans-serif;
+  margin: 20px 0 40px;
+}
+
+.big-subtitle h2 {
+  color: #ffee71;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.speaker-box {
+  margin-bottom: 20px;
+}
+
+.speaker-box-more {
+  float: left !important;
+}
+
+.speaker-name {
+  color: #fff;
+  font-weight: normal;
+  font-family: 'TitilliumText22LBold', Arial, sans-serif;
+  font-size: 18px;
+  margin: 20px 0 0;
+}
+
+.speaker-description {
+  color: #fff;
+  font-family: 'TitilliumText22LRegular', Arial, sans-serif;
+  font-size: 14px;
+}
+
+.social-box {
+  border-radius: 5px;
+  background: #5c574f;
+  padding: 15px;
+  margin-bottom: 18px;
+}
+
+.social-box-label {
+  display: inline;
+  color: #ffee71;
+  font-size: 18px;
+  height: 30px;
+  font-family: 'TitilliumText22LBold', Arial, sans-serif;
+}
+
+#___plusone_0 {
+  margin-top: -3px !important;
+}
+
+.social-box-label * {
+  vertical-align: top;
+}
+
+.social-box-form {
+  display: inline;
+  float: right;
+  margin: 0;
+}
+
+form.nice input.input-text {
+  display: inline-block;
+  margin: 0;
+  height: 31px;
+  padding: 4px 3px;
+}
+
+.social-box input {
+  vertical-align: top;
+}
+
+.footer {
+  border-top: 1px solid #000;
+  position: relative;
+  background: url('../images/voronoi.png') #312c23;
+  height: 200px;
+  box-shadow: inset 0 1px 1px #000;
+  text-align: center;
+  overflow: hidden;
+}
+
+.footer svg {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.footer path {
+  fill: #fadd51;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+.footer circle {
+  fill: #ccc;
+  stroke: #000;
+  pointer-events: none;
+}
+.PiYG .q0-9 {
+  fill: #312c24;
+}
+.PiYG .q1-9 {
+  fill: #343028;
+}
+.PiYG .q2-9 {
+  fill: #39342c;
+}
+.PiYG .q3-9 {
+  fill: #3d3830;
+}
+.PiYG .q4-9 {
+  fill: #2c2820;
+}
+.PiYG .q5-9 {
+  fill: #302b23;
+}
+.PiYG .q6-9 {
+  fill: #343028;
+}
+.PiYG .q7-9 {
+  fill: #39342c;
+}
+.PiYG .q8-9 {
+  fill: #3d3830;
+}
+
+.vardotJS {
+  display: inline-block;
+  width: auto !important;
+  float: none !important;
+  z-index: 2;
+  margin-top: 23px;
+  color: #fff;
+  font-family: 'TitilliumText22LRegular', Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.vardotJS strong {
+  font-weight: normal;
+  font-family: 'TitilliumText22LBold', Arial, sans-serif;
+}
+
+.vardotJS:hover {
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+}
 
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */
 
+@media only screen and (max-width: 767px) {
+  .logo a {
+    margin: 28px auto 0;
+  }
 
+  .nav-bar {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-bar > li {
+    display: inline-block;
+  }
+
+  .big-title {
+    margin-top: 20px;
+  }
+
+  .big-subtitle {
+    margin: 10px 0 20px;
+  }
+
+  .big-subtitle h2 {
+    font-size: 20px;
+  }
+
+  .speaker-box {
+    -webkit-box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .speaker-box-more {
+    float: none !important;
+  }
+
+  .speaker-box .six.columns {
+    float: left;
+    width: 47.8% !important;
+  }
+
+  .social-box-form {
+    float: none;
+  }
+
+  .social-box-form input {
+    margin: 10px 0;
+  }
+
+  .footer svg {
+    display: none;
+  }
+}
 
 
 /* -----------------------------------------
