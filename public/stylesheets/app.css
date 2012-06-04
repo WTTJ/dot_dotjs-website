@@ -129,8 +129,9 @@ div.alert-box strong {
   margin-bottom: 20px;
 }
 
+/* Only needed when the "more" speaker box is not in the last column */
 .speaker-box-more {
-  float: left !important;
+  /*float: left !important;*/
 }
 
 .speaker-name {
