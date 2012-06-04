@@ -3,10 +3,10 @@
  * Module dependencies.
  */
 
-var express = require('express')
-  , routes = require('./routes')
-  , partials = require('express-partials')
-  , http = require('http');
+var express = require('express'),
+    routes = require('./routes'),
+    partials = require('express-partials'),
+    http = require('http');
 
 var app = express();
 
@@ -34,8 +34,8 @@ app.get('/schedule', routes.schedule);
 app.get('/speakers', routes.speakers);
 app.get('/partners', routes.partners);
 app.get('/venue', routes.venue);
+app.post('/*', routes.handleForm);
 
-var port = process.env.PORT || app.get('port');
-http.createServer(app).listen(port, function(){
+http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });

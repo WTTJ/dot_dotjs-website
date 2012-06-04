@@ -73,10 +73,17 @@
       <div class="row">
         <div class="twelve columns">
           <div class="social-box">
-            <form class="social-box-form nice">
-              <input type="email" placeholder="Enter your email" class="input-text">
-              <input type="submit" disabled value="Subscribe to our newsletter" class="small white nice button radius">
-            </form>
+
+            <% if ( typeof success != "undefined" && success == 1) { %>
+              <p class="social-box-registered">Thanks!</p>
+            <% } else if ( typeof success != "undefined" && success == 0) { %>
+              <p class="social-box-error"><%= error %></p>
+            <% } else { %>
+              <form class="social-box-form nice" method="POST" action="/" id="newsletter">
+                <input type="email" name="email" placeholder="Enter your email" class="input-text">
+                <input type="submit" value="Subscribe to our newsletter" class="small white nice button radius">
+              </form>
+            <% } %>
 
             <p class="social-box-label">
               <span>Keep in touch&nbsp;&nbsp;&nbsp;&nbsp;</span>

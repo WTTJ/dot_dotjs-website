@@ -162,6 +162,16 @@ div.alert-box strong {
   font-family: 'TitilliumText22LBold', Arial, sans-serif;
 }
 
+.social-box-error {
+  color: red;
+  float: right;
+}
+
+.social-box-registered {
+  color: green;
+  float: right;
+}
+
 #___plusone_0 {
   margin-top: -3px !important;
 }
