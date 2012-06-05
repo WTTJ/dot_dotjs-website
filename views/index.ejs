@@ -7,7 +7,8 @@
             <h1>The largest JavaScript conference in France</h1>
           </div>
           <div class="text-center big-subtitle">
-            <h2>November 30, 2012 · Paris, France</h2>
+            <h2>November 30, 2012 · Paris, France&nbsp;
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.dotjs.eu" data-text="The largest JavaScript conference in France" data-count="none" data-hashtags="dotJS">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></h2>
           </div>
         </div>
       </div>
@@ -86,12 +87,13 @@
           <div class="social-box">
 
             <% if ( typeof success != "undefined" && success == 1) { %>
-              <p class="social-box-registered">Thanks!</p>
-            <% } else if ( typeof success != "undefined" && success == 0) { %>
-              <p class="social-box-error"><%= error %></p>
+              <p class="social-box-registered">Thanks for registering!</p>
             <% } else { %>
+              <% if ( typeof success != "undefined" && success == 0) { %>
+              <p class="social-box-error"><%= error %></p>
+              <% } %>
               <form class="social-box-form nice" method="POST" action="/" id="newsletter">
-                <input type="email" name="email" placeholder="Enter your email" class="input-text" style="width:200px;">
+                <input type="email" required name="email" placeholder="Enter your email" class="small input-text">
                 <input type="submit" value="Subscribe to our updates" class="small white nice button radius" style="padding-right:5px;padding-left:5px;">
               </form>
             <% } %>
@@ -99,12 +101,13 @@
             <p class="social-box-label">
               <span>Keep in touch&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
-              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://dotjs.eu" data-text="The largest JavaScript conference in France" data-count="none" data-hashtags="dotJS">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="https://twitter.com/dotJSeu" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @dotJSeu</a>
+             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              &nbsp;&nbsp;&nbsp;&nbsp;
 
               <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fdotjs&amp;send=false&amp;layout=standard&amp;width=200&amp;show_faces=false&amp;action=like&amp;colorscheme=dark&amp;font&amp;height=35&amp;appId=251788478243524" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:35px;" allowTransparency="true"></iframe>
             </p>
-
+            &nbsp;&nbsp;&nbsp;&nbsp;
             <div class="g-plusone" data-annotation="inline" data-width="120" data-href="http://www.dotjs.eu"></div>
             <script type="text/javascript">
               (function() {

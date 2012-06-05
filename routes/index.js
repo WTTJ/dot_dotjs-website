@@ -62,10 +62,12 @@ exports.handleForm = function(req, res){
         console.error('Error parsing data', data);
       }
 
-      console.log('dataParsed', dataParsed);
-
       var success = dataParsed.Success;
-      var error = dataParsed.FieldErrors[0].ErrorText;
+      var error = false;
+
+      if (!success) {
+        error = dataParsed.FieldErrors[0].ErrorText;
+      }
 
       res.render('index', {
         title: 'The largest JavaScript conference in France',

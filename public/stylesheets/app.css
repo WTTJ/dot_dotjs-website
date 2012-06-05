@@ -166,11 +166,13 @@ div.alert-box strong {
 .social-box-error {
   color: red;
   float: right;
+  font-weight: bold;
 }
 
 .social-box-registered {
-  color: green;
+  color: lime;
   float: right;
+  font-weight: bold;
 }
 
 #___plusone_0 {
@@ -184,6 +186,7 @@ div.alert-box strong {
 .social-box-form {
   display: inline;
   float: right;
+  clear: right;
   margin: 0;
 }
 
