@@ -131,7 +131,7 @@ div.alert-box strong {
 
 /* Only needed when the "more" speaker box is not in the last column */
 .speaker-box-more {
-  /*float: left !important;*/
+  float: left !important;
 }
 
 .speaker-name {
@@ -342,4 +342,40 @@ form.nice input.input-text {
    Page Name 2
 ----------------------------------------- */
 
+#venue-text {
+  margin-top: 30px;
+}
 
+#venue {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#map {
+  margin-top: 20px;
+  height: 300px;
+}
+
+#map {
+  color: #000;
+}
+
+#venue-text p,
+#venue-text li,
+#venue-text address {
+  font-family: 'TitilliumText22LRegular', Arial, sans-serif;
+  font-size: 16px;
+  color: #dddddd;
+}
+
+#venue-text strong {
+  font-weight: normal;
+  font-family: 'TitilliumText22LBold', Arial, sans-serif;
+}
+
+#venue-text span {
+  color: #fff;
+}
+
+#metros li {
+  margin: 0;
+}

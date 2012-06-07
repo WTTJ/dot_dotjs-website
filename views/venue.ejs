@@ -1,6 +1,74 @@
       <div class="row">
-        <div class="eight columns centered" style="min-height:400px;">
-          <h2>Venue</h2>
-          <p>Our amazing venue will be announced soon, in the heart of Paris. We'll keep you posted in the <a href="/#newsletter">newsletter</a>.</p>
+        <div class="twelve columns centered" style="min-height:400px;">
+          <div class="text-center big-title">
+            <h1>Theatre des Varietes</h1>
+          </div>
+          <div class="text-center">
+            <img src="images/img13.jpeg" id="venue">
+          </div>
         </div>
       </div>
+      <div class="row" id="venue-text">
+        <div class="twelve columns centered" style="min-height:400px;">
+          <div class="row">
+            <div class="six columns">
+              <h3>Venue</h3>
+              <p>The conference will take place in the beautiful <strong>Théâtre des Variétés</strong>.</p>
+              <p>Address:<br>
+              <span>Théâtre des Variétés<br>
+              7, Boulevard Montmartre<br>
+              75002 PARIS</span></p>
+              <div id="map"></div>
+            </div>
+            <div class="six columns">
+              <h3>Transportation</h3>
+              <p>The best way to get to the conference is to use public transportation. Tickets ("ticket t+") cost 1.70€ each and can be used for metro, bus and tram.</p>
+              <!-- <p><a href="#">More info at RATP.fr</a></p> -->
+
+              <h4>Metro</h4>
+              <ul id="metros">
+                <li><img src="images/metro8.png"> <img src="images/metro9.png"> Richelieu-Drouot</li>
+                <li><img src="images/metro8.png"> <img src="images/metro9.png"> Grands Boulevards</li>
+                <li><img src="images/metro3.png"> Bourse</li>
+              </ul>
+              <!-- <p><a href="#">Get directions at RATP.fr</a></p> -->
+
+              <h4>Bus</h4>
+              <p>22-48-52-66-74-85</p>
+              <!-- <p><a href="#">Get directions at RATP.fr</a></p> -->
+
+              <h4>Vélib’ (bike sharing)</h4>
+              <p>Paris has a bike sharing program. Renting a bike costs 1.70€ for 24 hours. This service requires a credit card. You can rent 1 bike per credit card.</p>
+              <!-- <p><a href="#">More info at www.velib.paris.fr</a></p> -->
+
+              <h4>Car</h4>
+              <p>We strongly advise you not to come by car. If you have to, the closest car park is 31 rue Vivienne, 75002 Paris.</p>
+              <!-- <p><a href="#">More info at vincipark.com</a></p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <link rel="stylesheet" href="leafleft/leaflet.css" />
+      <!--[if lte IE 8]>
+          <link rel="stylesheet" href="leafleft/leaflet.ie.css" />
+      <![endif]-->
+      <script src="leafleft/leaflet.js"></script>
+      <script>
+        // initialize the map on the "map" div with a given center and zoom
+        var map = new L.Map('map', {
+            center: new L.LatLng(48.8709775, 2.3418184),
+            zoom: 16
+        });
+
+        var markerLocation = new L.LatLng(48.87150042343126, 2.342206835746765);
+        var marker = new L.Marker(markerLocation);
+        map.addLayer(marker);
+        marker.bindPopup("Théâtre des variétés").openPopup();
+
+        // create a CloudMade tile layer
+        var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/abaafdba189a4de58752f9d0b65f8c39/998/256/{z}/{x}/{y}.png',
+            cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18});
+
+        // add the CloudMade layer to the map
+        map.addLayer(cloudmade);
+      </script>
