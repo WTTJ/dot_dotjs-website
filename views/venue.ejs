@@ -48,27 +48,34 @@
           </div>
         </div>
       </div>
-      <link rel="stylesheet" href="leafleft/leaflet.css" />
-      <!--[if lte IE 8]>
-          <link rel="stylesheet" href="leafleft/leaflet.ie.css" />
-      <![endif]-->
-      <script src="leafleft/leaflet.js"></script>
       <script>
-        // initialize the map on the "map" div with a given center and zoom
-        var map = new L.Map('map', {
-            center: new L.LatLng(48.8709775, 2.3418184),
-            zoom: 16
-        });
+        function initialize() {
+          var myLatlng = new google.maps.LatLng(48.87150042343126, 2.342206835746765);
+          var myOptions = {
+            center: new google.maps.LatLng(48.8709775, 2.3418184),
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          var map = new google.maps.Map(document.getElementById("map"), myOptions);
+          var infowindow = new google.maps.InfoWindow({
+            content: "Théâtre des variétés"
+          });
+          var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            title: "Théâtre des variétés"
+          });
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+          });
+        }
+        function loadScript() {
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDHgPmV8k09L84jhrq2Klpvc2ShrMKC16c&sensor=false&callback=initialize";
+          document.body.appendChild(script);
+        }
 
-        var markerLocation = new L.LatLng(48.87150042343126, 2.342206835746765);
-        var marker = new L.Marker(markerLocation);
-        map.addLayer(marker);
-        marker.bindPopup("Théâtre des variétés").openPopup();
-
-        // create a CloudMade tile layer
-        var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/abaafdba189a4de58752f9d0b65f8c39/998/256/{z}/{x}/{y}.png',
-            cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18});
-
-        // add the CloudMade layer to the map
-        map.addLayer(cloudmade);
+        window.onload = loadScript;
       </script>
