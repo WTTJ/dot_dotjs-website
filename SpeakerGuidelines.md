@@ -3,7 +3,7 @@ dotJS Speaker guidelines
 
 ### 1. Understand what makes dotJS special
 
-dotJS is closer to a TED conference than to a regular tech conference (the dotJS team also organizes TEDxParis)
+dotJS is much closer to a TED conference than to a regular tech conference (the dotJS team also organizes TEDxParis)
 
 It means that:
 * We'll completely break the "No Stage" rule of JSConf and have a *spectacular* stage instead (http://dotjs.eu/venue)
@@ -18,7 +18,7 @@ The audience will be mostly web developers, attracted through local JS/HTML5/Nod
 
 We haven't selected you as a speaker because we'd like you to talk about your company or even your main open source project.
 
-We wanted you because you're an bright hacker that can inspire people and have insights on deeply technical matters.
+We wanted you because you are a bright hacker who can inspire people and have insights on deeply technical matters.
 
 So you are free to choose any subject, as long as it's linked to JavaScript ;-) The most important thing is to be **passionate** about it, and bring something new and exciting to the stage.
 
