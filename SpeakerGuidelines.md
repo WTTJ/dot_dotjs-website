@@ -39,3 +39,8 @@ Remember that you won't be a background noise in a room of people hacking away. 
 Surprise them, make them laugh, make them cry with some WTFJS, make sure they'll come back home, remember your talk and brag about it to their friends...
 
 If you need something special on stage, or any other kind of custom happening we'll be more than happy to help. (By default you'll have a stand with audio and mini-displayport/vga plugs).
+
+See you soon at the conference and feel free to reach out if you need anything!
+
+--
+The dotJS team
