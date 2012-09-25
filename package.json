@@ -6,7 +6,7 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": "~3.0.0beta4",
+    "express": "~3.0.0rc5",
     "ejs": "~0.8.3",
     "express-partials": "~0.0.6"
   },
