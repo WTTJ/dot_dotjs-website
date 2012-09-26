@@ -15,8 +15,8 @@ exports.schedule = function(req, res){
   res.render('schedule', { title: 'Schedule' });
 };
 
-exports.speakers = function(req, res){
-  res.render('speakers', { title: 'Speakers' });
+exports.workshops = function(req, res){
+  res.render('workshops', { title: 'Workshops' });
 };
 
 exports.partners = function(req, res){

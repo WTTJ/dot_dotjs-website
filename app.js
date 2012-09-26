@@ -30,7 +30,7 @@ app.configure('development', function(){
 app.get('/', routes.index);
 app.get('/about', routes.about);
 app.get('/schedule', routes.schedule);
-app.get('/speakers', routes.speakers);
+app.get('/workshops', routes.workshops);
 app.get('/partners', routes.partners);
 app.get('/venue', routes.venue);
 app.post('/*', routes.handleForm);
