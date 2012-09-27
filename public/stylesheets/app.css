@@ -402,3 +402,13 @@ form.nice input.input-text {
 #workshops .four p {
   margin-bottom: 0;
 }
+
+#workshop-photo-credit {
+  position:relative;
+  top:-25px;
+  left:150px;
+}
+
+#workshops-venue {
+  height:300px;
+}
