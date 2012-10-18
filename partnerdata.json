@@ -1,36 +1,66 @@
 {
 
+  "google":{
 
-  "jolicloud":{
-    "text":"HA
-      <h3>About Jolicloud</h3>
 
-      <p>Jolicloud was created in 2009 with the vision of combining the infinite power of the cloud with the most simple and elegant user interface. The journey started with Joli OS, a free operating system transforming the way people are using low cost computers. Today, Jolicloud is the most innovative platform to access our life online, from computers to mobile.</p>
+    "text":"
 
-      <p>Founded by Tariq Krim and Romain Huet, Jolicloud is headquarted in Paris, France.</p>
+      <h3>About Google</h3>
+    
+      <p>Node.js and <a href='http://www.mongodb.org/'> MongoDB</a> are both gaining traction as the default tools for building the real-time web, from analytics systems to chat servers to location-based tracking services.</p>
 
-      <h3>Why we're partnering with dotJS</h3>
+      <p>Working with Node.js JavaScript means that MongoDB documents get their most natural representation — as JSON — right in the application layer, making development an easy and seamless process.</p>
 
-      <p>At Jolicloud we strongly agree strongly with Brendan Eich when we famously said “Always bet on JavaScript”. We have been pushing JavaScript to its limits, both on the client-side and the server-side to create beautiful and disruptive products.</p>
+      <p>Play around with MongoDB and Node.js through <a href='https://github.com/mongodb/node-mongodb-native'> the official driver</a> try out the <a href='https://github.com/learnboost/mongoose'>Mongoose ODM </a> for a richer data-model library.</p>
 
-      <p>As a company that relies on and believes in JavaScript, we are delighted to be partners of DotJS. This is a great initiative for the both international and local JS community and we hope that it is just beginning of something bigger.</p>
-
-      <p>Be sure to come by and meet us at our smoothie & juice bar — the Smoothie Stack — at the venue on the 30th!</p>
-
+      <p>For updates on MongoDB releases, tips, tricks and tools, <a href='http://www.10gen.com/signup'>sign up for the MongoDB newsletter</a>.</p>
     ",
 
-    "level":"bronze",
-
+    "level":"platinum",
+    "order":1,
     "logo":"",
-    "name":"Jolicloud",
-    "url":"http://jolicloud.com"
-  },
-
-
-  "typhon":{
+    "name":"google",
+    "url":"http://google.com"
 
 
   },
+
+
+
+  "microsoft":{
+
+
+    "text":"
+
+      <h3>About Microsoft</h3>
+
+   ",
+   "order":1,
+   "level":"gold",
+
+    "logo":"/partners/microsoft.jpeg",
+    "name":"Microsoft",
+    "url":"http://microsoft.com"
+
+  },
+
+  "enyojs":{
+
+
+    "text":"
+
+      <h3>About EnyoJS</h3>
+
+   ",
+   "order":2,
+   "level":"gold",
+
+    "logo":"/partners/enyojs.png",
+    "name":"EnyoJS",
+    "url":"http://enyojs.com"
+
+  },
+
 
 
   "10gen":{
@@ -50,13 +80,98 @@
     ",
 
     "level":"silver",
-
+    "order":1,
     "logo":"",
     "name":"10gen",
     "url":"http://10gen.com"
 
   },
 
+
+  "aws":{
+
+    "text":"
+
+      <h3>About Amazon Web Services</h3>
+
+      <p>In 2006, Amazon Web Services (AWS) began offering IT infrastructure services to businesses in the form of web services -- now commonly known as cloud computing. One of the key benefits of cloud computing is the opportunity to replace up-front capital infrastructure expenses with low variable costs that scale with your business. With the Cloud, businesses no longer need to plan for and procure servers and other IT infrastructure weeks or months in advance. Instead, they can instantly spin up hundreds or thousands of servers in minutes and deliver results faster.</p>
+
+      <p>AWS enables any customer to run JS Applications in the cloud. Today, Amazon Web Services provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world. With data center locations in the U.S., Europe, Brazil, Singapore, and Japan, customers across all industries are taking advantage of the following benefits:</p>
+      <ul>
+        <li>Low cost without any upfront investment</li>
+        <li>Agility and Instant Elasticity to scale up and down your JS application</li>
+        <li>Open and flexible</li>
+        <li>Secure</li>
+      </ul>
+
+    ",
+
+    "level":"silver",
+    "order":2,
+    "logo":"/partners/aws.png",
+    "name":"Amazon Web Services",
+    "url":"http://aws.amazon.com"
+
+
+
+  },
+
+
+  "appsfuel":{
+
+    "text":"
+
+      <h3>About AppsFuel</h3>
+
+      <p>AppsFuel is a new marketplace - device and OS independent - where HTML5 Apps Take the Lead.</p>
+
+      <p>With AppsFuel, users will find it easy to browse categories, read reviews, locate their favorite apps and share them on social media, knowing all their friends can use them, because AppsFuel apps work on any smartphone.</p>
+
+      <p>For developers, AppsFuel is an open and easy platform to use for the distribution of mobile web applications. We aim to create a close collaboration with developers providing them with the tools required to design, develop, publish and monetize their HTML5 Mobile Web Apps.</p>
+
+      <p>With AppsFuel developers will benefit from an unprecedented direct connection to their customers and limitless possibilities for user interaction and customized experiences, while also enjoying open and flexible billing options in more than 25 countries. What’s more, the 'write once, deploy everywhere' nature of the platform will massively reduce the cost of creating, versioning and maintaining applications. And because AppsFuel springs off of Buongiorno’s 130 direct carrier billing relations, monetization will be our main differentiating benefit.</p>
+
+      <p>AppsFuel is proud to be one of the DotJs sponsors. DotJs is one of the most interesting appointments in Europe to talk and share opinions with developers about Javascript and HTML5. We are sure that this 2012 edition will be inspiring for all participants and our team will be happy to share our knowledge and experience regarding mobile web apps creation.</p>
+
+    ",
+
+    "url":"http://appsfuel.com/",
+
+    "level":"silver",
+    "order":3,
+    "logo":"",
+    "name":"AppsFuel"
+
+  },
+
+
+
+  "realtime":{
+
+    "text":"
+
+      <h3>About AppsFuel</h3>
+
+      <p>AppsFuel is a new marketplace - device and OS independent - where HTML5 Apps Take the Lead.</p>
+
+      <p>With AppsFuel, users will find it easy to browse categories, read reviews, locate their favorite apps and share them on social media, knowing all their friends can use them, because AppsFuel apps work on any smartphone.</p>
+
+      <p>For developers, AppsFuel is an open and easy platform to use for the distribution of mobile web applications. We aim to create a close collaboration with developers providing them with the tools required to design, develop, publish and monetize their HTML5 Mobile Web Apps.</p>
+
+      <p>With AppsFuel developers will benefit from an unprecedented direct connection to their customers and limitless possibilities for user interaction and customized experiences, while also enjoying open and flexible billing options in more than 25 countries. What’s more, the 'write once, deploy everywhere' nature of the platform will massively reduce the cost of creating, versioning and maintaining applications. And because AppsFuel springs off of Buongiorno’s 130 direct carrier billing relations, monetization will be our main differentiating benefit.</p>
+
+      <p>AppsFuel is proud to be one of the DotJs sponsors. DotJs is one of the most interesting appointments in Europe to talk and share opinions with developers about Javascript and HTML5. We are sure that this 2012 edition will be inspiring for all participants and our team will be happy to share our knowledge and experience regarding mobile web apps creation.</p>
+
+    ",
+
+    "url":"http://realtime.co/",
+
+    "level":"silver",
+    "order":4,
+    "logo":"/partners/realtime.png",
+    "name":"Realtime"
+
+  },
 
 
   "typhon":{
@@ -70,6 +185,7 @@
 
    ",
 
+   "order":1,
    "level":"bronze",
 
     "logo":"/partners/typhon.png",
@@ -79,25 +195,31 @@
   },
 
 
+  "jolicloud":{
+    "text":"HA
+      <h3>About Jolicloud</h3>
 
-  "enyojs":{
+      <p>Jolicloud was created in 2009 with the vision of combining the infinite power of the cloud with the most simple and elegant user interface. The journey started with Joli OS, a free operating system transforming the way people are using low cost computers. Today, Jolicloud is the most innovative platform to access our life online, from computers to mobile.</p>
 
+      <p>Founded by Tariq Krim and Romain Huet, Jolicloud is headquarted in Paris, France.</p>
 
-    "text":"
+      <h3>Why we are partnering with dotJS</h3>
 
-      <h3>About Typhon</h3>
-    
-      <p>Typhon offers managed web hosting, cloud, high availability and scalability.</p>
+      <p>At Jolicloud we strongly agree strongly with Brendan Eich when we famously said “Always bet on JavaScript”. We have been pushing JavaScript to its limits, both on the client-side and the server-side to create beautiful and disruptive products.</p>
 
-   ",
+      <p>As a company that relies on and believes in JavaScript, we are delighted to be partners of DotJS. This is a great initiative for the both international and local JS community and we hope that it is just beginning of something bigger.</p>
 
-   "level":"gold",
+      <p>Be sure to come by and meet us at our smoothie & juice bar — the Smoothie Stack — at the venue on the 30th!</p>
 
-    "logo":"/partners/typhon.png",
-    "name":"Typhon",
-    "url":"http://typhon.com"
+    ",
 
+    "level":"bronze",
+    "order":2,
+    "logo":"",
+    "name":"Jolicloud",
+    "url":"http://jolicloud.com"
   }
+
 
 
 }
