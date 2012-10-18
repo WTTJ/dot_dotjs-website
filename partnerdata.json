@@ -7,18 +7,11 @@
 
       <h3>About Google</h3>
     
-      <p>Node.js and <a href='http://www.mongodb.org/'> MongoDB</a> are both gaining traction as the default tools for building the real-time web, from analytics systems to chat servers to location-based tracking services.</p>
-
-      <p>Working with Node.js JavaScript means that MongoDB documents get their most natural representation — as JSON — right in the application layer, making development an easy and seamless process.</p>
-
-      <p>Play around with MongoDB and Node.js through <a href='https://github.com/mongodb/node-mongodb-native'> the official driver</a> try out the <a href='https://github.com/learnboost/mongoose'>Mongoose ODM </a> for a richer data-model library.</p>
-
-      <p>For updates on MongoDB releases, tips, tricks and tools, <a href='http://www.10gen.com/signup'>sign up for the MongoDB newsletter</a>.</p>
     ",
 
     "level":"platinum",
     "order":1,
-    "logo":"",
+    "logo":"/partners/google.png",
     "name":"google",
     "url":"http://google.com"
 
@@ -81,7 +74,7 @@
 
     "level":"silver",
     "order":1,
-    "logo":"",
+    "logo":"/partners/10gen.png",
     "name":"10gen",
     "url":"http://10gen.com"
 
@@ -139,8 +132,27 @@
 
     "level":"silver",
     "order":3,
-    "logo":"",
+    "logo":"/partners/appsfuel.png",
     "name":"AppsFuel"
+
+  },
+
+
+
+  "sendgrid":{
+
+    "text":"
+
+      <h3>About Sendgrid</h3>
+
+    ",
+
+    "url":"http://sendgrid.com/",
+
+    "level":"silver",
+    "order":5,
+    "logo":"/partners/sendgrid.png",
+    "name":"Sendgrid"
 
   },
 
@@ -150,17 +162,7 @@
 
     "text":"
 
-      <h3>About AppsFuel</h3>
-
-      <p>AppsFuel is a new marketplace - device and OS independent - where HTML5 Apps Take the Lead.</p>
-
-      <p>With AppsFuel, users will find it easy to browse categories, read reviews, locate their favorite apps and share them on social media, knowing all their friends can use them, because AppsFuel apps work on any smartphone.</p>
-
-      <p>For developers, AppsFuel is an open and easy platform to use for the distribution of mobile web applications. We aim to create a close collaboration with developers providing them with the tools required to design, develop, publish and monetize their HTML5 Mobile Web Apps.</p>
-
-      <p>With AppsFuel developers will benefit from an unprecedented direct connection to their customers and limitless possibilities for user interaction and customized experiences, while also enjoying open and flexible billing options in more than 25 countries. What’s more, the 'write once, deploy everywhere' nature of the platform will massively reduce the cost of creating, versioning and maintaining applications. And because AppsFuel springs off of Buongiorno’s 130 direct carrier billing relations, monetization will be our main differentiating benefit.</p>
-
-      <p>AppsFuel is proud to be one of the DotJs sponsors. DotJs is one of the most interesting appointments in Europe to talk and share opinions with developers about Javascript and HTML5. We are sure that this 2012 edition will be inspiring for all participants and our team will be happy to share our knowledge and experience regarding mobile web apps creation.</p>
+      <h3>About Realtime</h3>
 
     ",
 
@@ -196,7 +198,7 @@
 
 
   "jolicloud":{
-    "text":"HA
+    "text":"
       <h3>About Jolicloud</h3>
 
       <p>Jolicloud was created in 2009 with the vision of combining the infinite power of the cloud with the most simple and elegant user interface. The journey started with Joli OS, a free operating system transforming the way people are using low cost computers. Today, Jolicloud is the most innovative platform to access our life online, from computers to mobile.</p>
@@ -215,11 +217,43 @@
 
     "level":"bronze",
     "order":2,
-    "logo":"",
+    "logo":"/partners/jolicloud.png",
     "name":"Jolicloud",
     "url":"http://jolicloud.com"
-  }
+  },
 
+
+  "nodejitsu":{
+
+
+    "text":"
+
+      <h3>About Nodejitsu</h3>
+
+   ",
+
+   "order":3,
+   "level":"bronze",
+
+   "logo":"/partners/nodejitsu.png",
+   "name":"Nodejitsu",
+   "url":"http://nodejitsu.com"
+
+  },
+
+
+  "capitainetrain":{
+    "text":"
+      <h3>About Capitaine Train</h3>
+
+    ",
+
+    "level":"bronze",
+    "order":4,
+    "logo":"/partners/capitainetrain.png",
+    "name":"Capitaine Train",
+    "url":"http://capitainetrain.com"
+  }
 
 
 }
