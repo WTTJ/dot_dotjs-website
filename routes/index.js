@@ -4,7 +4,29 @@ var fs = require("fs"),
 var PARTNERDATA = JSON.parse(fs.readFileSync(path.join(__dirname, '../partnerdata.json')).toString().replace(/\n/g, ''));
 
 exports.index = function(req, res){
-  res.render('index', { title: 'The largest JavaScript conference in France', partners: PARTNERDATA });
+  var partnersSorted = {
+        platinum: [],
+        gold: [],
+        silver: [],
+        bronze: []
+      };
+
+  for (var partner in PARTNERDATA) {
+    if (PARTNERDATA.hasOwnProperty(partner)) {
+      partnersSorted[PARTNERDATA[partner].level].push(PARTNERDATA[partner]);
+    }
+  }
+
+  function sortByOrder(p1, p2) {
+    return p1.order - p2.order;
+  }
+
+  partnersSorted['platinum'].sort(sortByOrder);
+  partnersSorted['gold'].sort(sortByOrder);
+  partnersSorted['silver'].sort(sortByOrder);
+  partnersSorted['bronze'].sort(sortByOrder);
+
+  res.render('index', { title: 'The largest JavaScript conference in France', partners: partnersSorted });
 };
 
 exports.about = function(req, res){
