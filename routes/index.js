@@ -1,4 +1,5 @@
-
+var fs = require("fs"),
+    path = require("path");
 /*
  * GET home page.
  */
@@ -21,6 +22,15 @@ exports.workshops = function(req, res){
 
 exports.partners = function(req, res){
   res.render('partners', { title: 'Partners' });
+};
+
+var PARTNERDATA = JSON.parse(fs.readFileSync(path.join(__dirname,"../partnerdata.json")).toString().replace(/\n/g,""));
+
+exports.partner = function(req, res){
+
+  if (!PARTNERDATA[req.params.name]) return res.send(404);
+
+  res.render('partner_detail', { title: 'Partner', partner:PARTNERDATA[req.params.name] });
 };
 
 exports.venue = function(req, res){

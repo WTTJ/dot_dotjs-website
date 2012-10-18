@@ -32,6 +32,7 @@ app.get('/about', routes.about);
 app.get('/schedule', routes.schedule);
 app.get('/workshops', routes.workshops);
 app.get('/partners', routes.partners);
+app.get('/partner/:name', routes.partner);
 app.get('/venue', routes.venue);
 app.post('/*', routes.handleForm);
 

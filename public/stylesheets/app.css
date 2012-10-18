@@ -52,7 +52,7 @@ acronym {
   padding: 0 20px;
   text-align: center;
   font-family: 'TitilliumText22LBold', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 18px !important;
   color: #fff;
   text-transform: uppercase;
 }
