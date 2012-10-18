@@ -1,1 +1,7 @@
-<%= partner.logo %>
+      <div class="row">
+        <div class="eight columns centered margin30">
+          <h1><%= partner.name %> (<%= partner.level %>)</h1>
+          <p><a href="<%= partner.url %>"><img src="<%= partner.logo || "http://placehold.it/350x150" %>"></a></p>
+          <%- partner.text %>
+        </div>
+      </div>
