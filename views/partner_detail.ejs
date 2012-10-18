@@ -1,7 +1,11 @@
-      <div class="row">
-        <div class="eight columns centered margin30">
-          <h1><%= partner.name %> (<%= partner.level %>)</h1>
-          <p><a href="<%= partner.url %>"><img src="<%= partner.logo || "http://placehold.it/350x150" %>"></a></p>
+      <div class="row padd">
+        <div class="three columns offset-by-one">
+          <p><a href="<%= partner.url %>"><img style="max-width:100%" src="<%= partner.logo %>"></a></p>
+          <p>Partner <strong><%= partner.level %></strong></p>
+        </div>
+        <div class="seven columns">
+          <!--<h1><%= partner.name %></h1>-->
           <%- partner.text %>
         </div>
+        <div class="one"></div>
       </div>

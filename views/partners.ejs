@@ -1,6 +1,30 @@
-      <div class="row">
-        <div class="eight columns centered" id="venue-text">
-          <h2>Partners</h2>
+      <div class="row padd">
+        <div class="eight columns centered" id="partners">
+          <h2>Platinum Partners</h2>
+          <% for (var partner in partners) { %>
+            <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'platinum') { %>
+              <a class="platinum-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+            <% } %>
+          <% } %>
+          <h2>Gold Partners</h2>
+          <% for (var partner in partners) { %>
+            <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'gold') { %>
+              <a class="gold-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+            <% } %>
+          <% } %>
+          <h2>Silver Partners</h2>
+          <% for (var partner in partners) { %>
+            <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'silver') { %>
+              <a class="silver-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+            <% } %>
+          <% } %>
+          <h2>Bronze Partners</h2>
+          <% for (var partner in partners) { %>
+            <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'bronze') { %>
+              <a class="bronze-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+            <% } %>
+          <% } %>
+          <hr>
           <p>Partner packages are available on request: <a href="mailto:contact@dotjs.eu">contact@dotjs.eu</a>.</p>
         </div>
       </div>

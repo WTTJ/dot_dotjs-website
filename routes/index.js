@@ -1,11 +1,10 @@
 var fs = require("fs"),
     path = require("path");
-/*
- * GET home page.
- */
+
+var PARTNERDATA = JSON.parse(fs.readFileSync(path.join(__dirname, '../partnerdata.json')).toString().replace(/\n/g, ''));
 
 exports.index = function(req, res){
-  res.render('index', { title: 'The largest JavaScript conference in France' });
+  res.render('index', { title: 'The largest JavaScript conference in France', partners: PARTNERDATA });
 };
 
 exports.about = function(req, res){
@@ -21,16 +20,15 @@ exports.workshops = function(req, res){
 };
 
 exports.partners = function(req, res){
-  res.render('partners', { title: 'Partners' });
+  res.render('partners', { title: 'Partners', partners: PARTNERDATA });
 };
 
-var PARTNERDATA = JSON.parse(fs.readFileSync(path.join(__dirname,"../partnerdata.json")).toString().replace(/\n/g,""));
-
 exports.partner = function(req, res){
+  if (!PARTNERDATA[req.params.name]) {
+    return res.send(404);
+  }
 
-  if (!PARTNERDATA[req.params.name]) return res.send(404);
-
-  res.render('partner_detail', { title: 'Partner', partner:PARTNERDATA[req.params.name] });
+  res.render('partner_detail', { title: 'Partner', partner: PARTNERDATA[req.params.name] });
 };
 
 exports.venue = function(req, res){

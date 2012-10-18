@@ -352,13 +352,34 @@ form.nice input.input-text {
   }
 }
 
+#partners {
+  text-align: center;
+}
+
+#partners a {
+  display: block;
+  margin: 10px auto;
+}
+
+.gold-partner {
+  width: 60%;
+}
+
+.silver-partner {
+  width: 40%;
+}
+
+.bronze-partner {
+  width: 20%;
+}
+
 #venue-text {
   margin-top: 30px;
   min-height: 400px;
 }
 
-.row .margin30 {
-  margin-top: 30px;
+.padd {
+  padding-top: 30px;
 }
 
 #venue {
