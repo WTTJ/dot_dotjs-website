@@ -26,23 +26,23 @@ exports.index = function(req, res){
   partnersSorted['silver'].sort(sortByOrder);
   partnersSorted['bronze'].sort(sortByOrder);
 
-  res.render('index', { title: 'The largest JavaScript conference in France', partners: partnersSorted });
+  res.render('index', { title: 'The largest JavaScript conference in France', name:"index", partners: partnersSorted });
 };
 
 exports.about = function(req, res){
-  res.render('about', { title: 'About' });
+  res.render('about', { title: 'About', name:"about" });
 };
 
 exports.schedule = function(req, res){
-  res.render('schedule', { title: 'Schedule' });
+  res.render('schedule', { title: 'Schedule', name:"schedule" });
 };
 
 exports.workshops = function(req, res){
-  res.render('workshops', { title: 'Workshops' });
+  res.render('workshops', { title: 'Workshops', name:"workshops" });
 };
 
 exports.partners = function(req, res){
-  res.render('partners', { title: 'Partners', partners: PARTNERDATA });
+  res.render('partners', { title: 'Partners', name:"partners", partners: PARTNERDATA });
 };
 
 exports.partner = function(req, res){
@@ -50,11 +50,15 @@ exports.partner = function(req, res){
     return res.send(404);
   }
 
-  res.render('partner_detail', { title: 'Partner', partner: PARTNERDATA[req.params.name] });
+  if (!PARTNERDATA[req.params.name].text) {
+    return res.redirect(PARTNERDATA[req.params.name].url);
+  }
+
+  res.render('partner_detail', { title: 'Partner', name:"partner", partner: PARTNERDATA[req.params.name] });
 };
 
 exports.venue = function(req, res){
-  res.render('venue', { title: 'Venue' });
+  res.render('venue', { title: 'Venue', name:"venue" });
 };
 
 exports.handleForm = function(req, res){

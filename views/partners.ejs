@@ -1,30 +1,79 @@
-      <div class="row padd">
-        <div class="eight columns centered" id="partners">
-          <h2>Platinum Partners</h2>
-          <% for (var partner in partners) { %>
-            <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'platinum') { %>
-              <a class="platinum-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
-            <% } %>
-          <% } %>
-          <h2>Gold Partners</h2>
-          <% for (var partner in partners) { %>
-            <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'gold') { %>
-              <a class="gold-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
-            <% } %>
-          <% } %>
-          <h2>Silver Partners</h2>
-          <% for (var partner in partners) { %>
-            <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'silver') { %>
-              <a class="silver-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
-            <% } %>
-          <% } %>
-          <h2>Bronze Partners</h2>
-          <% for (var partner in partners) { %>
-            <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'bronze') { %>
-              <a class="bronze-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
-            <% } %>
-          <% } %>
-          <hr>
-          <p>Partner packages are available on request: <a href="mailto:contact@dotjs.eu">contact@dotjs.eu</a>.</p>
-        </div>
+
+  <div class="row padd">
+    <div class="ten columns centered" id="partners">
+
+      <p>This event couldn't be organized without the help of our awesome partners. Check them out!</p>
+
+      <h2>Platinum Partner</h2>
+
+      <% for (var partner in partners) { %>
+        <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'platinum') { %>
+          <a class="platinum-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+        <% } %>
+      <% } %>
+
+      <h2>Gold Partners</h2>
+
+      <div class="row">
+      <% for (var partner in partners) { %>
+        <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'gold') { %>
+          <div class="six columns">
+            <a class="gold-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+          </div>
+        <% } %>
+      <% } %>
       </div>
+
+
+      <h2>Silver Partners</h2>
+
+      <% var i = 0; %>
+
+      <div class="row">
+      <% for (var partner in partners) { %>
+        <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'silver' && i<3) { %>
+          <div class="four columns">
+            <a class="silver-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+          </div>
+          <% i++ %>
+        <% } %>
+      <% } %>
+      </div>
+
+      <% var i = 0; %>
+
+      <div class="row">
+      <div class="one columns"></div>
+      <div class="ten columns">
+      <% for (var partner in partners) { %>
+        <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'silver') { %>
+          <% if (i>=3) { %>
+            <div class="six columns">
+              <a class="silver-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+            </div>
+            <% if (i==3) { %><div class="two columns"></div><% } %>
+          <% } %>
+          <% i++ %>
+        <% } %>
+      <% } %>
+      </div>
+      <div class="one columns"></div>
+      </div>
+
+
+      <h2>Bronze Partners</h2>
+
+      <div class="row">
+      <% for (var partner in partners) { %>
+        <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'bronze') { %>
+          <div class="three columns">
+            <a class="bronze-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+          </div>
+        <% } %>
+      <% } %>
+      </div>
+
+      <hr>
+      <p>Partner packages are available on request: <a href="mailto:contact@dotjs.eu">contact@dotjs.eu</a>.</p>
+    </div>
+  </div>
