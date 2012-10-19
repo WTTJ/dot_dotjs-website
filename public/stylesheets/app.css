@@ -356,6 +356,10 @@ form.nice input.input-text {
   text-align: center;
 }
 
+#partners .logo-enyojs img {
+  height: 300px;
+}
+
 #partners a {
   display: block;
   margin: 10px auto;
@@ -387,12 +391,20 @@ form.nice input.input-text {
 }
 
 #partner-sidebar {
+  background: rgba(255, 255, 255, 0.8);
   text-align: center;
+  margin-bottom: 20px;
+}
+
+#partner-sidebar h4,
+#partner-sidebar h5 {
+  color: #000;
 }
 
 #partner-sidebar img {
-  max-width: 100%;
-  max-height: 75px;
+  max-width: 100px;
+  max-height: 60px;
+  margin-bottom: 10px;
 }
 
 #map {
