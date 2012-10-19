@@ -110,12 +110,5 @@
     "logo": "/partners/nodejitsu.png",
     "name": "Nodejitsu",
     "url": "http://nodejitsu.com"
-  },
-  "capitainetrain": {
-    "level": "bronze",
-    "order": 4,
-    "logo": "/partners/capitainetrain.jpeg",
-    "name": "Capitaine Train",
-    "url": "http://capitainetrain.com"
   }
 }
