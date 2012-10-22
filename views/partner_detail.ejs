@@ -1,6 +1,6 @@
       <div class="row padd">
         <div class="three columns offset-by-one">
-          <p><a href="<%= partner.url %>"><img style="max-width:100%;<% if (partner.name=="10gen") { %>background:#BBB;padding:10px;<% } %>" src="<%= partner.logo %>"></a></p>
+          <p><a href="<%= partner.url %>"><img style="max-width:100%;<% if (partner.name=="10gen") { %>background:#BBB;padding:10px;<% } %>" src="<%= partner.logo_darkbg || partner.logo %>"></a></p>
           <p><a href="<%= partner.url %>"><%= partner.url %></a></p>
           
           <p><strong><%= partner.level.substring(0,1).toUpperCase()+partner.level.substring(1) %></strong> partner </p>

@@ -66,7 +66,7 @@
       <div class="row">
       <% for (var partner in partners) { %>
         <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'bronze') { %>
-          <div class="three columns">
+          <div class="four columns">
             <a class="bronze-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
           </div>
         <% } %>
