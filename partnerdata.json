@@ -14,6 +14,23 @@
     "url": "http://blogs.msdn.com/b/davrous/"
   },
   "enyojs": {
+    "text": "
+      <h3>About Enyo</h3>
+      <img src='/partners/enyo-devices.png' style='float:right;padding:10px;width:200px;' />
+      <p>Enyo helps developers build native-quality HTML5 apps that run across all platforms and form factors, from mobile to desktop and beyond. It is:</p>
+      <ul style='list-style:circle;padding-left:20px;'>
+        <li>Truly cross-platform: Use the same framework to develop apps for the web and for all major platforms, desktop and mobile.</li>
+        <li>Free and open-source: 100% free to use, Enyo is available under the Apache License, Version 2.0.</li>
+        <li>Extensible: With a small, rock-solid core, Enyo is modular and designed to be extended by the developer community.</li>
+        <li>Built to manage complexity: Enyo's elegant component model makes it simple to build and maintain even the most complex apps.</li>
+        <li>Optimized for mobile: Enyo has roots in mobile and was built from the ground up to shine on tablets and phones.</li>
+        <li>Lightweight & Fast: Enyo is small (core is <25k gzipped) and tuned for speed and responsiveness on all supported platforms.</li>
+      </ul>
+      <h3>Why we are partnering with dotJS</h3>
+      <p>The Enyo team is excited to be a part of the very first dotJS Conference. We're honored to be sharing the stage with some of the brightest stars in the JavaScript universe, and look forward to meeting hundreds of European developers who share our passion for JavaScript. Given the impressive track record of the dotJS team, we expect the conference to be a huge success!</p>
+      <p>Learn more at <a href='http://enyojs.com'>enyojs.com</a>, <a href='http://twitter.com/EnyoJS'>Follow us on Twitter</a> or  Grab the code at <a href='http://enyojs.com/get-enyo/'>http://enyojs.com/get-enyo/</a> !</p>
+      
+    ",
     "order": 2,
     "level": "gold",
     "logo": "/partners/enyojs.png",
