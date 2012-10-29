@@ -479,7 +479,7 @@ form.nice input.input-text {
 }
 
 #workshops h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 #workshops .four p {
@@ -494,4 +494,27 @@ form.nice input.input-text {
 
 #workshops-venue {
   height:300px;
+}
+
+.alert-li li {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  margin: 0 0 18px;
+}
+
+table {
+  background: transparent;
+}
+
+table th {
+  font-size: bold;
+}
+
+table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+table tbody tr td {
+  color: #fff;
 }
