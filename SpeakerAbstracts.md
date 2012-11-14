@@ -1,5 +1,7 @@
 Speakers, please pull request your talk title+abstract or send it to Sylvain by email ;-)
 
+The timetable will depend on the content of your talks, please submit them first!
+
 
 ## Jeremy Ashkenas
 
