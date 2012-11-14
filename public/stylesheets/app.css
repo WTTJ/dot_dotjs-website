@@ -357,13 +357,16 @@ form.nice input.input-text {
 }
 
 #partners .logo-enyojs img {
-  height: 140px;
+  height: 100px;
 }
 
 #partners .logo-jolicloud img {
   height: 110px;
 }
 
+#partners .logo-nodejitsu img {
+  height: 120px;
+}
 
 #partners a {
   display: block;
