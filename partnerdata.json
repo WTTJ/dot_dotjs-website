@@ -98,6 +98,13 @@
     "logo": "/partners/realtime.png",
     "name": "Realtime"
   },
+  "joshfire": {
+    "url": "http://joshfire.com/",
+    "level": "silver",
+    "order": 6,
+    "logo": "/partners/joshfire.png",
+    "name": "Joshfire"
+  },
   "typhon": {
     "order": 1,
     "level": "bronze",

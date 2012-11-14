@@ -9,6 +9,7 @@ It means that:
 * We'll completely break the "No Stage" rule of JSConf and have a *spectacular* stage instead (http://dotjs.eu/venue)
 * The audience will be fully focused on the speaker (laptops will be allowed in the 1st floor but won't be practical)
 * We'll have a single track, so relatively few speakers (we had to turn down a lot of good proposals)
+* Talks will be shorter: 20 minutes + 5 minutes of questions
 
 ### 2. Understand your audience
 
@@ -30,15 +31,15 @@ For dotJS, we trust you enough to be confident you'll prepare and rehearse your 
 
 ### 5. Make it special!
 
-In the end, *you* are what makes this conference special ;-)
+In the end, *you* are what makes this conference special!
 
 Remember that you won't be a background noise in a room of people hacking away. Everybody will be listening to you expecting a talk worth of your number of GitHub followers ;-)
 
-**This audience focus is our gift to you**, and the minute you walk on stage it becomes *your* responsibility ;-) Engage the audience, and keep them focused through your talk!
+**This audience focus is our gift to you**, and the minute you walk on stage it becomes *your* responsibility ;-) Engage the audience, and keep them focused through the 20 minutes of your talk!
 
 Surprise them, make them laugh, make them cry with some WTFJS, make sure they'll come back home, remember your talk and brag about it to their friends...
 
-If you need something special on stage, or any other kind of custom happening we'll be more than happy to help. (By default you'll have a stand with audio and mini-displayport/vga plugs).
+If you need something special on stage, or any other kind of custom happening we'll be more than happy to help. (By default you'll have a stand with audio and mini-displayport/HDMI plugs).
 
 See you soon at the conference and feel free to reach out if you need anything!
 
