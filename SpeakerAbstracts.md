@@ -19,10 +19,9 @@ Unicode + JavaScript
 
 ## Christian Amor Kvalheim
 
-**Talk title**
+**MongoMan or the simplicities of multiplayer**
 
-Talk abstract
-
+We all secretly dream about being game developers and building the next big game out there. Let me take you through a trip of gaming and the basics of node.js game coding with a fun surprise at the end.
 
 ## Mr.doob
 
