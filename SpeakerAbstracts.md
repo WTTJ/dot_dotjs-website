@@ -68,9 +68,9 @@ Talk abstract
 
 ## Vojta Jína
 
-**Talk title**
+**You can do amazing things**
 
-Talk abstract
+I realized all of the cool guys that do all the great projects and stuff, they are just normal people. I realized they have a lot in common, in the way they do things. I would like to share these things along with a couple of stories, to motivate people to do amazing things.
 
 
 ## Kevin Schaaf
