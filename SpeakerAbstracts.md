@@ -46,10 +46,13 @@ Talk abstract
 
 ## Addy Osmani
 
-**Talk title**
+**The Developer Toolbelt Of Tomorrow**
 
-Talk abstract
+Building a JavaScript webapp these days usually requires a plethora of tools, boilerplates, 
+frameworks and a lot of glue to get them to work together. In this session, I'll show you how 
+to put together an efficient JavaScript tooling workflow.
 
+New DevTools features, WebStorm, Yeoman and more discussed.
 
 ## Brian LeRoux
 
