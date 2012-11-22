@@ -79,4 +79,4 @@ I realized all of the cool guys that do all the great projects and stuff, they a
 
 **Components in JavaScript**
 
-Benefits how having clean encapsulation and APIs for UI components
+Benefits of having clean encapsulation and APIs for UI components
