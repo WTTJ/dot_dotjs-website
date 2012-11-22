@@ -77,7 +77,6 @@ I realized all of the cool guys that do all the great projects and stuff, they a
 
 ## Kevin Schaaf
 
-**Talk title**
+**Components in JavaScript**
 
-Talk abstract
-
+Benefits how having clean encapsulation and APIs for UI components
