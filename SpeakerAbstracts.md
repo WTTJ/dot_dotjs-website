@@ -27,14 +27,14 @@ We all secretly dream about being game developers and building the next big game
 
 **Talk title**
 
-Talk abstract
+Demoscene, designer/programmer processes and new WebGL dev tools
 
 
 ## Bert Belder
 
 **Talk title**
 
-Talk abstract
+Node.js - the "journey" of how a file travels through the system and node up to the network card
 
 
 ## Fat
@@ -63,7 +63,7 @@ Talk abstract
 
 ## Charlie Robbins
 
-**Talk title**
+**Open Source like a Boss**
 
 Talk abstract
 
