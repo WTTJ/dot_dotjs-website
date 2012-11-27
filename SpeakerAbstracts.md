@@ -12,9 +12,9 @@ Talk abstract
 
 ## Mathias Bynens
 
-**Talk title**
+**JavaScript ♥ Unicode**
 
-Unicode + JavaScript
+In this talk we’ll take a look at the various ways JavaScript relies on Unicode, and what the consequences are for JavaScript developers.
 
 
 ## Christian Amor Kvalheim
