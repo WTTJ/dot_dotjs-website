@@ -21,7 +21,7 @@ app.configure(function(){
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
   
-  app.set('wufoo.authentication', process.env.WUFOO_AUTHENTICATION || 'Basic RTJBMy1MVDVaLTdDMVktQkZLQjpmb29zdGF0aWM=');
+  app.set('wufoo.authorization', process.env.WUFOO_AUTHORIZATION || 'Basic RTJBMy1MVDVaLTdDMVktQkZLQjpmb29zdGF0aWM=');
 });
 
 app.configure('development', function(){
