@@ -1,7 +1,7 @@
       <div class="row">
         <div class="twelve columns">
           <div class="alert-box">
-            <strong><a href="http://svay.com/photos/2012-11-30_dotjs/" target="_blank">Photos</a> are online! Videos coming soon.</strong>
+            <strong><a href="http://svay.com/photos/2012-11-30_dotjs/" target="_blank">Photos</a> and <a href="http://youtube.com/user/dotconferences">Videos</a> are online!</strong>
           </div>
           <div class="text-center big-title">
             <h1>The largest JavaScript conference in France</h1>
@@ -194,17 +194,19 @@
       <div class="row">
         <div class="twelve columns">
           <div class="social-box">
-            <% if ( typeof success != "undefined" && success == 1) { %>
-              <p class="social-box-registered">Thanks for registering!</p>
-            <% } else { %>
-              <% if ( typeof success != "undefined" && success == 0) { %>
-              <p class="social-box-error"><%= error %></p>
-              <% } %>
-              <form class="social-box-form nice" method="POST" action="/" id="newsletter">
-                <input type="email" required name="email" placeholder="Enter your email" class="small input-text">
-                <input type="submit" value="Subscribe to our updates" class="small white nice button radius" style="padding-right:5px;padding-left:5px;">
-              </form>
-            <% } %>
+
+
+            <!-- Begin MailChimp Signup Form -->
+
+            <form action="http://sylvinus.us6.list-manage.com/subscribe/post?u=84ca2bd5de3056b11c6d2d9f2&amp;id=1a79063f10" method="post" name="mc-embedded-subscribe-form" class="social-box-form" target="_blank" novalidate>
+              <input type="email" value="" name="EMAIL" class="input-text email" placeholder="Enter your email..." required>
+              <input type="submit" value="Send me updates" name="subscribe" class="small white nice button radius">
+
+              <input type="hidden" value="1" name="group[3161][1]" />
+            </form>
+
+            <!--End mc_embed_signup-->
+
 
             <p class="social-box-label">
               <span>Keep in touch&nbsp;&nbsp;&nbsp;&nbsp;</span>
