@@ -12,6 +12,22 @@ var app = express();
 
 app.use(partials());
 
+
+
+var domainRedirect = function(from_host, to_host) {
+
+  return function(req, res, next) {
+    var requested_host = req.header("host");
+
+    if ( requested_host == from_host ) {
+      res.redirect(301, "http://"+to_host+req.path);
+    } else {
+      next();
+    }
+  };
+};
+
+
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
@@ -21,6 +37,8 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
+
+  app.use(domainRedirect("2012.dotjs.io", "2012.dotjs.eu"));
 });
 
 app.configure('development', function(){
