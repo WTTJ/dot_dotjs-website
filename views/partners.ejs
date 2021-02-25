@@ -13,7 +13,7 @@
 
       <% for (var partner in partners) { %>
         <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'platinum') { %>
-          <a class="platinum-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+          <a class="platinum-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="<%= partners[partner].url %>"><img src="<%= partners[partner].logo %>"></a>
         <% } %>
       <% } %>
 
@@ -23,7 +23,7 @@
       <% for (var partner in partners) { %>
         <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'gold') { %>
           <div class="six columns">
-            <a class="gold-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+            <a class="gold-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="<%= partners[partner].url %>"><img src="<%= partners[partner].logo %>"></a>
           </div>
         <% } %>
       <% } %>
@@ -38,7 +38,7 @@
       <% for (var partner in partners) { %>
         <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'silver' && i<3) { %>
           <div class="four columns">
-            <a class="silver-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+            <a class="silver-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="<%= partners[partner].url %>"><img src="<%= partners[partner].logo %>"></a>
           </div>
           <% i++ %>
         <% } %>
@@ -52,7 +52,7 @@
         <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'silver') { %>
           <% if (i>=3) { %>
             <div class="four columns">
-              <a class="silver-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+              <a class="silver-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="<%= partners[partner].url %>"><img src="<%= partners[partner].logo %>"></a>
             </div>
             <% if (i==42) { %><div class="two columns"></div><% } %>
           <% } %>
@@ -68,7 +68,7 @@
       <% for (var partner in partners) { %>
         <% if (partners.hasOwnProperty(partner) && partners[partner].level === 'bronze') { %>
           <div class="four columns">
-            <a class="bronze-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="/partner/<%= partners[partner].name.toLowerCase().replace(' ', '') %>"><img src="<%= partners[partner].logo %>"></a>
+            <a class="bronze-partner logo-<%= partners[partner].name.toLowerCase().replace(' ', '') %>" href="<%= partners[partner].url %>"><img src="<%= partners[partner].logo %>"></a>
           </div>
         <% } %>
       <% } %>

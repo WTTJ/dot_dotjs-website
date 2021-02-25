@@ -52,7 +52,6 @@ app.get('/workshops', routes.workshops);
 app.get('/partners', routes.partners);
 app.get('/partner/:name', routes.partner);
 app.get('/venue', routes.venue);
-app.post('/*', routes.handleForm);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

@@ -10,14 +10,14 @@
   <title>dotJS - <%= title %></title>
   <link rel="icon" href="/favicon.png">
   <meta property="og:title" content="dotJS">
-  <meta property="og:url" content="http://www.dotjs.eu">
+  <meta property="og:url" content="https://2012.dotjs.io">
   <meta property="fb:admins" content="540702632">
-  <meta property="og:image" content="http://www.dotjs.eu/images/logo.png">
+  <meta property="og:image" content="https://2012.dotjs.io/images/logo.png">
   <meta property="og:type" content="website">
   <meta property="og:description" content="The largest JavaScript conference in France">
   <meta itemprop="name" content="dotJS">
   <meta itemprop="description" content="The largest JavaScript conference in France">
-  <meta itemprop="image" content="http://www.dotjs.eu/images/logo.png">
+  <meta itemprop="image" content="https://2012.dotjs.io/images/logo.png">
   <meta name="google-site-verification" content="XHuushjVYcLmHYucyo4K1dioGybxO_S6fTCc5wUg9D0">
   <!-- Included CSS Files -->
   <link rel="stylesheet" href="/stylesheets/foundation.css">
@@ -68,7 +68,7 @@
   <script src="/javascripts/jquery.min.js"></script>
   <script src="/javascripts/foundation.js"></script>
   <script src="/javascripts/app.js"></script>
-  <script src="http://d3js.org/d3.v2.js"></script>
+  <script src="/javascripts/d3.v2.js"></script>
   <script>
   var width = window.innerWidth,
     height = 200;
@@ -104,16 +104,6 @@
         .filter(function(d) { return this.getAttribute("d") != d; })
         .attr("d", function(d) { return d; });
   }
-  </script>
-  <script>
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-31964806-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
   </script>
 </body>
 </html>
