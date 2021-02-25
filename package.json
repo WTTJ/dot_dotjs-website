@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "express": "3.0.0rc5",
-    "ejs": "0.8.3",
+    "ejs": "2.5.5",
     "express-partials": "0.0.6"
   },
   "engines": {
